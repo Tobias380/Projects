@@ -2,10 +2,10 @@ import time
 import RPi.GPIO as gpio
 from Adafruit_PWM_Servo_Driver import PWM
 
-gpio.setmode (gpio.Board)
+gpio.setmode (gpio.BOARD)
 pwm = PWM(0x40, debug=True)
-gpio.setup (7, gpio.out)
-gpio.setup (12, gpio.out)
+gpio.setup (7, gpio.OUT)
+gpio.setup (12, gpio.OUT)
 
 def Spin1 ():
   gpio.output(7, True)
