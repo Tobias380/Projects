@@ -15,8 +15,8 @@ def Spin1 ():
   time.sleep(2)
   
 def Spin2 ():
-  gpio.output(7, True)
-  gpio.output(12, False)
+  gpio.output(7, False)
+  gpio.output(12, True)
   pwm.setPWMFreq(60)
   pwm.setPWM (0,0,2000) 
   time.sleep(2)
